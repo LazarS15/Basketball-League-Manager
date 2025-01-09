@@ -1,0 +1,43 @@
+application:
+  client-origin-url: ${CLIENT_ORIGIN_URL}
+  cloudinary-url: ${CLOUDINARY_URL}
+
+server:
+  port: ${PORT}
+
+spring:
+
+  application.name: basketball-league
+  mvc:
+    throw-exception-if-no-handler-found: true
+
+  web:
+    resources:
+      add-mappings: false
+
+  data.rest.base-path: /api
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+    platform: postgres
+
+  jpa:
+    hibernate.ddl-auto: none
+    open-in-view: false
+    show-sql: false
+
+#    properties.javax.persistence.schema-generation.scripts.create-target: create.sql
+#    properties.javax.persistence.schema-generation.scripts.action: create
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    locations: classpath:db/migration
+
+okta:
+  oauth2:
+    issuer: ${OKTA_OAUTH2_ISSUER}
+    audience: ${OKTA_OAUTH2_AUDIENCE}
