@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",
+    "@azure/static-web-apps-cli": "^2.0.2",
     "axios": "^1.7.9",
     "hamburger-react": "^2.5.1",
     "js-sha1": "^0.7.0",
