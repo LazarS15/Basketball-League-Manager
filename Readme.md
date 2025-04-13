@@ -2,7 +2,7 @@
 
 Fullstack application for organizing and tracking basketball league results:  
 
-• Create and manage teams 
+• Create and manage teams                                                                                 
 • Schedule games  
 • Track live game stats and player performance  
 • View updated league standings automatically   
